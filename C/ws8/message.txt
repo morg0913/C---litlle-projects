@@ -1,0 +1,112 @@
+/************************************************************************
+Title: ws9
+Description: memset, memcpy, memmove implementation;
+Author: Eliran
+Reviewer: 
+
+InfinityLabs OL95
+*************************************************************************/
+
+#include <stdio.h> /* printf */
+#include <string.h> 
+
+#define DEST_SIZE 50
+
+static void *MemSet(void *s, int c, size_t n);
+static void *MemCpy(void *dest, const void *src, size_t n);
+static void *MemMove(void *dest, const void *src, size_t n);
+
+
+int main(void)
+{	
+   	/***********************************************************************************/
+   	/* test for memcpy */
+   	/*
+   	char char_array[] = "test memcpy abcdefg"; 
+   	char cdest[DEST_SIZE]; 
+   	int int_array[] = {11, 12, 13, 14, 15}; 
+   	int idest[DEST_SIZE];
+   	int i = 0;
+   	
+   	MemCpy(cdest, char_array, 2); 	
+   	for (i = 0 ;i < DEST_SIZE; i++) 
+   	{
+     	printf("%c", cdest[i]);  
+    }  
+    
+   	MemCpy(idest, int_array,  2); 
+   	printf("\nCopied array is "); 
+   	for (i = 0 ;i < DEST_SIZE; i++) 
+   	{
+     	printf("%d ,", idest[i]);  
+    }    
+    printf("\n"); 
+    
+    /***********************************************************************************/
+   	/* test for memset */
+   	/*
+   	char char_array[] = "test memset abcdefg"; 
+   	int int_array[] = {11, 12, 13, 14, 15}; 
+   	char cdest[DEST_SIZE]; 
+    int idest[DEST_SIZE];
+   	int i = 0;
+   	
+    MemSet(cdest, 'a', 4);   
+    for (i = 0 ;i < DEST_SIZE; i++) 
+   	{
+     	printf("%c", cdest[i]);  
+    }  
+     
+    MemSet(idest, 'a',  3);
+    for (i = 0 ;i < DEST_SIZE; i++) 
+   	{
+     	printf("%d ,", idest[i]);  
+    }  
+    */
+    
+    /***********************************************************************************/
+   	/* test for memmove */
+   	/*
+   	char char_array[] = "test memset abcdefg"; 
+   	int int_array[] = {11, 12, 13, 14, 15}; 
+   	char cdest[DEST_SIZE]; 
+    int idest[DEST_SIZE];
+   	int i = 0;
+    */
+    
+	return 0;
+}
+
+static void *MemCpy(void *dest, const void *src, size_t n)
+{
+	size_t i = 0;
+	
+	size_t *csrc = (size_t *)src; 
+   	size_t *cdest = (size_t *)dest; 
+  	
+   	for (i = 0; i < n; i++)
+   	{
+       		cdest[i] = csrc[i];
+    } 
+    return cdest;
+}
+
+static void *MemSet(void *s, int c, size_t n)
+{
+	size_t i = 0;
+	size_t *cdest = (size_t *)s; 
+	for (i = 0; i < n; ++i)
+	{
+		cdest[i] = c;
+	} 
+	return cdest;
+}
+
+static void *MemMove(void *dest, const void *src, size_t n)
+{
+	char *cdest = (char *)dest; 
+	
+	
+	return cdest;
+}
+

@@ -1,0 +1,8 @@
+The size of char is 1
+The size of unsigned char is 1
+The size of int is 4
+The size of unsigne int is 4
+The size of short is 2
+The size of unsigned short is 2
+The size of long is 8
+The size of unsigned long is 8
