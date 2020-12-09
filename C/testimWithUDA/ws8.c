@@ -1,11 +1,4 @@
-/******************************************************************************
- * Title:		Worksheet 6 (Bitwise operations) 
- * Description:	
- * Author:		Yehuda Gilad
- * Reviewer:	
- * 
- * InfinityLabs OL95
- *****************************************************************************/
+
 
 #include <stdio.h> 
 #include <math.h>
