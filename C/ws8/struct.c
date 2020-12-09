@@ -1,11 +1,4 @@
-/******************************************************************************
- * Title:		Worksheet 6 (Bitwise operations) 
- * Description:	
- * Author:		Mor Gafson
- * Reviewer:		Amit Glazer
- * 
- * InfinityLabs OL95
- *****************************************************************************/
+
 
 #include <stdio.h> /* printf, sprintf */
 #include <stdlib.h> /* malloc, realloc, free */
