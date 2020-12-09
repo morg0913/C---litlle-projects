@@ -1,11 +1,4 @@
-/******************************************************************************
- * Title:		Worksheet 9 (Word boundary optimization) 
- * Description:	
- * Author:		Mor Gafson
- * Reviewer:	
- * 
- * InfinityLabs OL95
- *****************************************************************************/
+
 
 
 #include <stdio.h> /* printf */
